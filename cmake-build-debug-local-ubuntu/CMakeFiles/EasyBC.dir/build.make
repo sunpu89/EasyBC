@@ -80,122 +80,80 @@ generated/lexer.cpp: /home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "[FLEX][EasyBCLexer] Building scanner with flex 2.6.4"
 	cd /home/sunpu/CPP/EasyBC && /usr/bin/flex -o/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/generated/lexer.cpp src/frontend/language/lexer.l
 
-CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.o: CMakeFiles/EasyBC.dir/flags.make
-CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.o: /home/sunpu/CPP/EasyBC/src/analysis/differential/DiffMILPcons.cpp
-CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.o -MF CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.o.d -o CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.o -c /home/sunpu/CPP/EasyBC/src/analysis/differential/DiffMILPcons.cpp
+CMakeFiles/EasyBC.dir/src/main.cpp.o: CMakeFiles/EasyBC.dir/flags.make
+CMakeFiles/EasyBC.dir/src/main.cpp.o: /home/sunpu/CPP/EasyBC/src/main.cpp
+CMakeFiles/EasyBC.dir/src/main.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/EasyBC.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/main.cpp.o -MF CMakeFiles/EasyBC.dir/src/main.cpp.o.d -o CMakeFiles/EasyBC.dir/src/main.cpp.o -c /home/sunpu/CPP/EasyBC/src/main.cpp
 
-CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sunpu/CPP/EasyBC/src/analysis/differential/DiffMILPcons.cpp > CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.i
+CMakeFiles/EasyBC.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EasyBC.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sunpu/CPP/EasyBC/src/main.cpp > CMakeFiles/EasyBC.dir/src/main.cpp.i
 
-CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/analysis/differential/DiffMILPcons.cpp -o CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.s
+CMakeFiles/EasyBC.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/main.cpp -o CMakeFiles/EasyBC.dir/src/main.cpp.s
 
-CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.o: CMakeFiles/EasyBC.dir/flags.make
-CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.o: /home/sunpu/CPP/EasyBC/src/analysis/differential/DiffSBMILP.cpp
-CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.o -MF CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.o.d -o CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.o -c /home/sunpu/CPP/EasyBC/src/analysis/differential/DiffSBMILP.cpp
+CMakeFiles/EasyBC.dir/src/app/Application.cpp.o: CMakeFiles/EasyBC.dir/flags.make
+CMakeFiles/EasyBC.dir/src/app/Application.cpp.o: /home/sunpu/CPP/EasyBC/src/app/Application.cpp
+CMakeFiles/EasyBC.dir/src/app/Application.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/EasyBC.dir/src/app/Application.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/app/Application.cpp.o -MF CMakeFiles/EasyBC.dir/src/app/Application.cpp.o.d -o CMakeFiles/EasyBC.dir/src/app/Application.cpp.o -c /home/sunpu/CPP/EasyBC/src/app/Application.cpp
 
-CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sunpu/CPP/EasyBC/src/analysis/differential/DiffSBMILP.cpp > CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.i
+CMakeFiles/EasyBC.dir/src/app/Application.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EasyBC.dir/src/app/Application.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sunpu/CPP/EasyBC/src/app/Application.cpp > CMakeFiles/EasyBC.dir/src/app/Application.cpp.i
 
-CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/analysis/differential/DiffSBMILP.cpp -o CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.s
+CMakeFiles/EasyBC.dir/src/app/Application.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/app/Application.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/app/Application.cpp -o CMakeFiles/EasyBC.dir/src/app/Application.cpp.s
 
-CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.o: CMakeFiles/EasyBC.dir/flags.make
-CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.o: /home/sunpu/CPP/EasyBC/src/analysis/differential/DiffSWMILP.cpp
-CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.o -MF CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.o.d -o CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.o -c /home/sunpu/CPP/EasyBC/src/analysis/differential/DiffSWMILP.cpp
+CMakeFiles/EasyBC.dir/src/handlers/AnalysisHandler.cpp.o: CMakeFiles/EasyBC.dir/flags.make
+CMakeFiles/EasyBC.dir/src/handlers/AnalysisHandler.cpp.o: /home/sunpu/CPP/EasyBC/src/handlers/AnalysisHandler.cpp
+CMakeFiles/EasyBC.dir/src/handlers/AnalysisHandler.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/EasyBC.dir/src/handlers/AnalysisHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/handlers/AnalysisHandler.cpp.o -MF CMakeFiles/EasyBC.dir/src/handlers/AnalysisHandler.cpp.o.d -o CMakeFiles/EasyBC.dir/src/handlers/AnalysisHandler.cpp.o -c /home/sunpu/CPP/EasyBC/src/handlers/AnalysisHandler.cpp
 
-CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sunpu/CPP/EasyBC/src/analysis/differential/DiffSWMILP.cpp > CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.i
+CMakeFiles/EasyBC.dir/src/handlers/AnalysisHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EasyBC.dir/src/handlers/AnalysisHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sunpu/CPP/EasyBC/src/handlers/AnalysisHandler.cpp > CMakeFiles/EasyBC.dir/src/handlers/AnalysisHandler.cpp.i
 
-CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/analysis/differential/DiffSWMILP.cpp -o CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.s
+CMakeFiles/EasyBC.dir/src/handlers/AnalysisHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/handlers/AnalysisHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/handlers/AnalysisHandler.cpp -o CMakeFiles/EasyBC.dir/src/handlers/AnalysisHandler.cpp.s
 
-CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.o: CMakeFiles/EasyBC.dir/flags.make
-CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.o: /home/sunpu/CPP/EasyBC/src/analysis/sbox/Check.cpp
-CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.o -MF CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.o.d -o CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.o -c /home/sunpu/CPP/EasyBC/src/analysis/sbox/Check.cpp
+CMakeFiles/EasyBC.dir/src/handlers/InterpreterHandler.cpp.o: CMakeFiles/EasyBC.dir/flags.make
+CMakeFiles/EasyBC.dir/src/handlers/InterpreterHandler.cpp.o: /home/sunpu/CPP/EasyBC/src/handlers/InterpreterHandler.cpp
+CMakeFiles/EasyBC.dir/src/handlers/InterpreterHandler.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/EasyBC.dir/src/handlers/InterpreterHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/handlers/InterpreterHandler.cpp.o -MF CMakeFiles/EasyBC.dir/src/handlers/InterpreterHandler.cpp.o.d -o CMakeFiles/EasyBC.dir/src/handlers/InterpreterHandler.cpp.o -c /home/sunpu/CPP/EasyBC/src/handlers/InterpreterHandler.cpp
 
-CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sunpu/CPP/EasyBC/src/analysis/sbox/Check.cpp > CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.i
+CMakeFiles/EasyBC.dir/src/handlers/InterpreterHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EasyBC.dir/src/handlers/InterpreterHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sunpu/CPP/EasyBC/src/handlers/InterpreterHandler.cpp > CMakeFiles/EasyBC.dir/src/handlers/InterpreterHandler.cpp.i
 
-CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/analysis/sbox/Check.cpp -o CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.s
+CMakeFiles/EasyBC.dir/src/handlers/InterpreterHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/handlers/InterpreterHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/handlers/InterpreterHandler.cpp -o CMakeFiles/EasyBC.dir/src/handlers/InterpreterHandler.cpp.s
 
-CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.o: CMakeFiles/EasyBC.dir/flags.make
-CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.o: /home/sunpu/CPP/EasyBC/src/analysis/sbox/Reduction.cpp
-CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.o -MF CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.o.d -o CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.o -c /home/sunpu/CPP/EasyBC/src/analysis/sbox/Reduction.cpp
+CMakeFiles/EasyBC.dir/src/handlers/SboxHandler.cpp.o: CMakeFiles/EasyBC.dir/flags.make
+CMakeFiles/EasyBC.dir/src/handlers/SboxHandler.cpp.o: /home/sunpu/CPP/EasyBC/src/handlers/SboxHandler.cpp
+CMakeFiles/EasyBC.dir/src/handlers/SboxHandler.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/EasyBC.dir/src/handlers/SboxHandler.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/handlers/SboxHandler.cpp.o -MF CMakeFiles/EasyBC.dir/src/handlers/SboxHandler.cpp.o.d -o CMakeFiles/EasyBC.dir/src/handlers/SboxHandler.cpp.o -c /home/sunpu/CPP/EasyBC/src/handlers/SboxHandler.cpp
 
-CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sunpu/CPP/EasyBC/src/analysis/sbox/Reduction.cpp > CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.i
+CMakeFiles/EasyBC.dir/src/handlers/SboxHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EasyBC.dir/src/handlers/SboxHandler.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sunpu/CPP/EasyBC/src/handlers/SboxHandler.cpp > CMakeFiles/EasyBC.dir/src/handlers/SboxHandler.cpp.i
 
-CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/analysis/sbox/Reduction.cpp -o CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.s
-
-CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.o: CMakeFiles/EasyBC.dir/flags.make
-CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.o: /home/sunpu/CPP/EasyBC/src/analysis/sbox/SboxModel.cpp
-CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.o -MF CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.o.d -o CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.o -c /home/sunpu/CPP/EasyBC/src/analysis/sbox/SboxModel.cpp
-
-CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sunpu/CPP/EasyBC/src/analysis/sbox/SboxModel.cpp > CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.i
-
-CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/analysis/sbox/SboxModel.cpp -o CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.s
-
-CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.o: CMakeFiles/EasyBC.dir/flags.make
-CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.o: /home/sunpu/CPP/EasyBC/src/analysis/sbox/superball.cpp
-CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.o -MF CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.o.d -o CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.o -c /home/sunpu/CPP/EasyBC/src/analysis/sbox/superball.cpp
-
-CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sunpu/CPP/EasyBC/src/analysis/sbox/superball.cpp > CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.i
-
-CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/analysis/sbox/superball.cpp -o CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.s
-
-CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.o: CMakeFiles/EasyBC.dir/flags.make
-CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.o: /home/sunpu/CPP/EasyBC/src/analysis/sbox/superballMGR.cpp
-CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.o -MF CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.o.d -o CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.o -c /home/sunpu/CPP/EasyBC/src/analysis/sbox/superballMGR.cpp
-
-CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sunpu/CPP/EasyBC/src/analysis/sbox/superballMGR.cpp > CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.i
-
-CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/analysis/sbox/superballMGR.cpp -o CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.s
+CMakeFiles/EasyBC.dir/src/handlers/SboxHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/handlers/SboxHandler.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/handlers/SboxHandler.cpp -o CMakeFiles/EasyBC.dir/src/handlers/SboxHandler.cpp.s
 
 CMakeFiles/EasyBC.dir/src/core/ASTNode.cpp.o: CMakeFiles/EasyBC.dir/flags.make
 CMakeFiles/EasyBC.dir/src/core/ASTNode.cpp.o: /home/sunpu/CPP/EasyBC/src/core/ASTNode.cpp
 CMakeFiles/EasyBC.dir/src/core/ASTNode.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/EasyBC.dir/src/core/ASTNode.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/EasyBC.dir/src/core/ASTNode.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/core/ASTNode.cpp.o -MF CMakeFiles/EasyBC.dir/src/core/ASTNode.cpp.o.d -o CMakeFiles/EasyBC.dir/src/core/ASTNode.cpp.o -c /home/sunpu/CPP/EasyBC/src/core/ASTNode.cpp
 
 CMakeFiles/EasyBC.dir/src/core/ASTNode.cpp.i: cmake_force
@@ -209,7 +167,7 @@ CMakeFiles/EasyBC.dir/src/core/ASTNode.cpp.s: cmake_force
 CMakeFiles/EasyBC.dir/src/core/ProcedureH.cpp.o: CMakeFiles/EasyBC.dir/flags.make
 CMakeFiles/EasyBC.dir/src/core/ProcedureH.cpp.o: /home/sunpu/CPP/EasyBC/src/core/ProcedureH.cpp
 CMakeFiles/EasyBC.dir/src/core/ProcedureH.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/EasyBC.dir/src/core/ProcedureH.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/EasyBC.dir/src/core/ProcedureH.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/core/ProcedureH.cpp.o -MF CMakeFiles/EasyBC.dir/src/core/ProcedureH.cpp.o.d -o CMakeFiles/EasyBC.dir/src/core/ProcedureH.cpp.o -c /home/sunpu/CPP/EasyBC/src/core/ProcedureH.cpp
 
 CMakeFiles/EasyBC.dir/src/core/ProcedureH.cpp.i: cmake_force
@@ -223,7 +181,7 @@ CMakeFiles/EasyBC.dir/src/core/ProcedureH.cpp.s: cmake_force
 CMakeFiles/EasyBC.dir/src/core/ValueCommon.cpp.o: CMakeFiles/EasyBC.dir/flags.make
 CMakeFiles/EasyBC.dir/src/core/ValueCommon.cpp.o: /home/sunpu/CPP/EasyBC/src/core/ValueCommon.cpp
 CMakeFiles/EasyBC.dir/src/core/ValueCommon.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/EasyBC.dir/src/core/ValueCommon.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/EasyBC.dir/src/core/ValueCommon.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/core/ValueCommon.cpp.o -MF CMakeFiles/EasyBC.dir/src/core/ValueCommon.cpp.o.d -o CMakeFiles/EasyBC.dir/src/core/ValueCommon.cpp.o -c /home/sunpu/CPP/EasyBC/src/core/ValueCommon.cpp
 
 CMakeFiles/EasyBC.dir/src/core/ValueCommon.cpp.i: cmake_force
@@ -234,10 +192,24 @@ CMakeFiles/EasyBC.dir/src/core/ValueCommon.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/core/ValueCommon.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/core/ValueCommon.cpp -o CMakeFiles/EasyBC.dir/src/core/ValueCommon.cpp.s
 
+CMakeFiles/EasyBC.dir/src/core/Globals.cpp.o: CMakeFiles/EasyBC.dir/flags.make
+CMakeFiles/EasyBC.dir/src/core/Globals.cpp.o: /home/sunpu/CPP/EasyBC/src/core/Globals.cpp
+CMakeFiles/EasyBC.dir/src/core/Globals.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/EasyBC.dir/src/core/Globals.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/core/Globals.cpp.o -MF CMakeFiles/EasyBC.dir/src/core/Globals.cpp.o.d -o CMakeFiles/EasyBC.dir/src/core/Globals.cpp.o -c /home/sunpu/CPP/EasyBC/src/core/Globals.cpp
+
+CMakeFiles/EasyBC.dir/src/core/Globals.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EasyBC.dir/src/core/Globals.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sunpu/CPP/EasyBC/src/core/Globals.cpp > CMakeFiles/EasyBC.dir/src/core/Globals.cpp.i
+
+CMakeFiles/EasyBC.dir/src/core/Globals.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/core/Globals.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/core/Globals.cpp -o CMakeFiles/EasyBC.dir/src/core/Globals.cpp.s
+
 CMakeFiles/EasyBC.dir/src/frontend/Transformer.cpp.o: CMakeFiles/EasyBC.dir/flags.make
 CMakeFiles/EasyBC.dir/src/frontend/Transformer.cpp.o: /home/sunpu/CPP/EasyBC/src/frontend/Transformer.cpp
 CMakeFiles/EasyBC.dir/src/frontend/Transformer.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/EasyBC.dir/src/frontend/Transformer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/EasyBC.dir/src/frontend/Transformer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/frontend/Transformer.cpp.o -MF CMakeFiles/EasyBC.dir/src/frontend/Transformer.cpp.o.d -o CMakeFiles/EasyBC.dir/src/frontend/Transformer.cpp.o -c /home/sunpu/CPP/EasyBC/src/frontend/Transformer.cpp
 
 CMakeFiles/EasyBC.dir/src/frontend/Transformer.cpp.i: cmake_force
@@ -248,38 +220,10 @@ CMakeFiles/EasyBC.dir/src/frontend/Transformer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/frontend/Transformer.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/frontend/Transformer.cpp -o CMakeFiles/EasyBC.dir/src/frontend/Transformer.cpp.s
 
-CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.o: CMakeFiles/EasyBC.dir/flags.make
-CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.o: /home/sunpu/CPP/EasyBC/src/interpreter/semanticInter.cpp
-CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.o -MF CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.o.d -o CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.o -c /home/sunpu/CPP/EasyBC/src/interpreter/semanticInter.cpp
-
-CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sunpu/CPP/EasyBC/src/interpreter/semanticInter.cpp > CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.i
-
-CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/interpreter/semanticInter.cpp -o CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.s
-
-CMakeFiles/EasyBC.dir/src/main.cpp.o: CMakeFiles/EasyBC.dir/flags.make
-CMakeFiles/EasyBC.dir/src/main.cpp.o: /home/sunpu/CPP/EasyBC/src/main.cpp
-CMakeFiles/EasyBC.dir/src/main.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/EasyBC.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/main.cpp.o -MF CMakeFiles/EasyBC.dir/src/main.cpp.o.d -o CMakeFiles/EasyBC.dir/src/main.cpp.o -c /home/sunpu/CPP/EasyBC/src/main.cpp
-
-CMakeFiles/EasyBC.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EasyBC.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sunpu/CPP/EasyBC/src/main.cpp > CMakeFiles/EasyBC.dir/src/main.cpp.i
-
-CMakeFiles/EasyBC.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/main.cpp -o CMakeFiles/EasyBC.dir/src/main.cpp.s
-
 CMakeFiles/EasyBC.dir/src/util/BranchNum.cpp.o: CMakeFiles/EasyBC.dir/flags.make
 CMakeFiles/EasyBC.dir/src/util/BranchNum.cpp.o: /home/sunpu/CPP/EasyBC/src/util/BranchNum.cpp
 CMakeFiles/EasyBC.dir/src/util/BranchNum.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/EasyBC.dir/src/util/BranchNum.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/EasyBC.dir/src/util/BranchNum.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/util/BranchNum.cpp.o -MF CMakeFiles/EasyBC.dir/src/util/BranchNum.cpp.o.d -o CMakeFiles/EasyBC.dir/src/util/BranchNum.cpp.o -c /home/sunpu/CPP/EasyBC/src/util/BranchNum.cpp
 
 CMakeFiles/EasyBC.dir/src/util/BranchNum.cpp.i: cmake_force
@@ -293,7 +237,7 @@ CMakeFiles/EasyBC.dir/src/util/BranchNum.cpp.s: cmake_force
 CMakeFiles/EasyBC.dir/src/util/utilities.cpp.o: CMakeFiles/EasyBC.dir/flags.make
 CMakeFiles/EasyBC.dir/src/util/utilities.cpp.o: /home/sunpu/CPP/EasyBC/src/util/utilities.cpp
 CMakeFiles/EasyBC.dir/src/util/utilities.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/EasyBC.dir/src/util/utilities.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/EasyBC.dir/src/util/utilities.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/util/utilities.cpp.o -MF CMakeFiles/EasyBC.dir/src/util/utilities.cpp.o.d -o CMakeFiles/EasyBC.dir/src/util/utilities.cpp.o -c /home/sunpu/CPP/EasyBC/src/util/utilities.cpp
 
 CMakeFiles/EasyBC.dir/src/util/utilities.cpp.i: cmake_force
@@ -304,10 +248,136 @@ CMakeFiles/EasyBC.dir/src/util/utilities.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/util/utilities.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/util/utilities.cpp -o CMakeFiles/EasyBC.dir/src/util/utilities.cpp.s
 
+CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.o: CMakeFiles/EasyBC.dir/flags.make
+CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.o: /home/sunpu/CPP/EasyBC/src/analysis/sbox/Check.cpp
+CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.o -MF CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.o.d -o CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.o -c /home/sunpu/CPP/EasyBC/src/analysis/sbox/Check.cpp
+
+CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sunpu/CPP/EasyBC/src/analysis/sbox/Check.cpp > CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.i
+
+CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/analysis/sbox/Check.cpp -o CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.s
+
+CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.o: CMakeFiles/EasyBC.dir/flags.make
+CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.o: /home/sunpu/CPP/EasyBC/src/analysis/sbox/Reduction.cpp
+CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.o -MF CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.o.d -o CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.o -c /home/sunpu/CPP/EasyBC/src/analysis/sbox/Reduction.cpp
+
+CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sunpu/CPP/EasyBC/src/analysis/sbox/Reduction.cpp > CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.i
+
+CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/analysis/sbox/Reduction.cpp -o CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.s
+
+CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.o: CMakeFiles/EasyBC.dir/flags.make
+CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.o: /home/sunpu/CPP/EasyBC/src/analysis/sbox/SboxModel.cpp
+CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.o -MF CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.o.d -o CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.o -c /home/sunpu/CPP/EasyBC/src/analysis/sbox/SboxModel.cpp
+
+CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sunpu/CPP/EasyBC/src/analysis/sbox/SboxModel.cpp > CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.i
+
+CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/analysis/sbox/SboxModel.cpp -o CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.s
+
+CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.o: CMakeFiles/EasyBC.dir/flags.make
+CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.o: /home/sunpu/CPP/EasyBC/src/analysis/sbox/superball.cpp
+CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.o -MF CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.o.d -o CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.o -c /home/sunpu/CPP/EasyBC/src/analysis/sbox/superball.cpp
+
+CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sunpu/CPP/EasyBC/src/analysis/sbox/superball.cpp > CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.i
+
+CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/analysis/sbox/superball.cpp -o CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.s
+
+CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.o: CMakeFiles/EasyBC.dir/flags.make
+CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.o: /home/sunpu/CPP/EasyBC/src/analysis/sbox/superballMGR.cpp
+CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.o -MF CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.o.d -o CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.o -c /home/sunpu/CPP/EasyBC/src/analysis/sbox/superballMGR.cpp
+
+CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sunpu/CPP/EasyBC/src/analysis/sbox/superballMGR.cpp > CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.i
+
+CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/analysis/sbox/superballMGR.cpp -o CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.s
+
+CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.o: CMakeFiles/EasyBC.dir/flags.make
+CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.o: /home/sunpu/CPP/EasyBC/src/analysis/differential/DiffMILPcons.cpp
+CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.o -MF CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.o.d -o CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.o -c /home/sunpu/CPP/EasyBC/src/analysis/differential/DiffMILPcons.cpp
+
+CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sunpu/CPP/EasyBC/src/analysis/differential/DiffMILPcons.cpp > CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.i
+
+CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/analysis/differential/DiffMILPcons.cpp -o CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.s
+
+CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.o: CMakeFiles/EasyBC.dir/flags.make
+CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.o: /home/sunpu/CPP/EasyBC/src/analysis/differential/DiffSBMILP.cpp
+CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.o -MF CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.o.d -o CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.o -c /home/sunpu/CPP/EasyBC/src/analysis/differential/DiffSBMILP.cpp
+
+CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sunpu/CPP/EasyBC/src/analysis/differential/DiffSBMILP.cpp > CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.i
+
+CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/analysis/differential/DiffSBMILP.cpp -o CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.s
+
+CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.o: CMakeFiles/EasyBC.dir/flags.make
+CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.o: /home/sunpu/CPP/EasyBC/src/analysis/differential/DiffSWMILP.cpp
+CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.o -MF CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.o.d -o CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.o -c /home/sunpu/CPP/EasyBC/src/analysis/differential/DiffSWMILP.cpp
+
+CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sunpu/CPP/EasyBC/src/analysis/differential/DiffSWMILP.cpp > CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.i
+
+CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/analysis/differential/DiffSWMILP.cpp -o CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.s
+
+CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.o: CMakeFiles/EasyBC.dir/flags.make
+CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.o: /home/sunpu/CPP/EasyBC/src/interpreter/semanticInter.cpp
+CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.o -MF CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.o.d -o CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.o -c /home/sunpu/CPP/EasyBC/src/interpreter/semanticInter.cpp
+
+CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sunpu/CPP/EasyBC/src/interpreter/semanticInter.cpp > CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.i
+
+CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sunpu/CPP/EasyBC/src/interpreter/semanticInter.cpp -o CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.s
+
 CMakeFiles/EasyBC.dir/generated/parser.cpp.o: CMakeFiles/EasyBC.dir/flags.make
 CMakeFiles/EasyBC.dir/generated/parser.cpp.o: generated/parser.cpp
 CMakeFiles/EasyBC.dir/generated/parser.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/EasyBC.dir/generated/parser.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/EasyBC.dir/generated/parser.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/generated/parser.cpp.o -MF CMakeFiles/EasyBC.dir/generated/parser.cpp.o.d -o CMakeFiles/EasyBC.dir/generated/parser.cpp.o -c /home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/generated/parser.cpp
 
 CMakeFiles/EasyBC.dir/generated/parser.cpp.i: cmake_force
@@ -322,7 +392,7 @@ CMakeFiles/EasyBC.dir/generated/lexer.cpp.o: CMakeFiles/EasyBC.dir/flags.make
 CMakeFiles/EasyBC.dir/generated/lexer.cpp.o: generated/lexer.cpp
 CMakeFiles/EasyBC.dir/generated/lexer.cpp.o: generated/parser.h
 CMakeFiles/EasyBC.dir/generated/lexer.cpp.o: CMakeFiles/EasyBC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/EasyBC.dir/generated/lexer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/EasyBC.dir/generated/lexer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/EasyBC.dir/generated/lexer.cpp.o -MF CMakeFiles/EasyBC.dir/generated/lexer.cpp.o.d -o CMakeFiles/EasyBC.dir/generated/lexer.cpp.o -c /home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/generated/lexer.cpp
 
 CMakeFiles/EasyBC.dir/generated/lexer.cpp.i: cmake_force
@@ -335,44 +405,54 @@ CMakeFiles/EasyBC.dir/generated/lexer.cpp.s: cmake_force
 
 # Object files for target EasyBC
 EasyBC_OBJECTS = \
-"CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.o" \
-"CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.o" \
-"CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.o" \
+"CMakeFiles/EasyBC.dir/src/main.cpp.o" \
+"CMakeFiles/EasyBC.dir/src/app/Application.cpp.o" \
+"CMakeFiles/EasyBC.dir/src/handlers/AnalysisHandler.cpp.o" \
+"CMakeFiles/EasyBC.dir/src/handlers/InterpreterHandler.cpp.o" \
+"CMakeFiles/EasyBC.dir/src/handlers/SboxHandler.cpp.o" \
+"CMakeFiles/EasyBC.dir/src/core/ASTNode.cpp.o" \
+"CMakeFiles/EasyBC.dir/src/core/ProcedureH.cpp.o" \
+"CMakeFiles/EasyBC.dir/src/core/ValueCommon.cpp.o" \
+"CMakeFiles/EasyBC.dir/src/core/Globals.cpp.o" \
+"CMakeFiles/EasyBC.dir/src/frontend/Transformer.cpp.o" \
+"CMakeFiles/EasyBC.dir/src/util/BranchNum.cpp.o" \
+"CMakeFiles/EasyBC.dir/src/util/utilities.cpp.o" \
 "CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.o" \
 "CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.o" \
 "CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.o" \
 "CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.o" \
 "CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.o" \
-"CMakeFiles/EasyBC.dir/src/core/ASTNode.cpp.o" \
-"CMakeFiles/EasyBC.dir/src/core/ProcedureH.cpp.o" \
-"CMakeFiles/EasyBC.dir/src/core/ValueCommon.cpp.o" \
-"CMakeFiles/EasyBC.dir/src/frontend/Transformer.cpp.o" \
+"CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.o" \
+"CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.o" \
+"CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.o" \
 "CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.o" \
-"CMakeFiles/EasyBC.dir/src/main.cpp.o" \
-"CMakeFiles/EasyBC.dir/src/util/BranchNum.cpp.o" \
-"CMakeFiles/EasyBC.dir/src/util/utilities.cpp.o" \
 "CMakeFiles/EasyBC.dir/generated/parser.cpp.o" \
 "CMakeFiles/EasyBC.dir/generated/lexer.cpp.o"
 
 # External object files for target EasyBC
 EasyBC_EXTERNAL_OBJECTS =
 
-bin/EasyBC: CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.o
-bin/EasyBC: CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.o
-bin/EasyBC: CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.o
+bin/EasyBC: CMakeFiles/EasyBC.dir/src/main.cpp.o
+bin/EasyBC: CMakeFiles/EasyBC.dir/src/app/Application.cpp.o
+bin/EasyBC: CMakeFiles/EasyBC.dir/src/handlers/AnalysisHandler.cpp.o
+bin/EasyBC: CMakeFiles/EasyBC.dir/src/handlers/InterpreterHandler.cpp.o
+bin/EasyBC: CMakeFiles/EasyBC.dir/src/handlers/SboxHandler.cpp.o
+bin/EasyBC: CMakeFiles/EasyBC.dir/src/core/ASTNode.cpp.o
+bin/EasyBC: CMakeFiles/EasyBC.dir/src/core/ProcedureH.cpp.o
+bin/EasyBC: CMakeFiles/EasyBC.dir/src/core/ValueCommon.cpp.o
+bin/EasyBC: CMakeFiles/EasyBC.dir/src/core/Globals.cpp.o
+bin/EasyBC: CMakeFiles/EasyBC.dir/src/frontend/Transformer.cpp.o
+bin/EasyBC: CMakeFiles/EasyBC.dir/src/util/BranchNum.cpp.o
+bin/EasyBC: CMakeFiles/EasyBC.dir/src/util/utilities.cpp.o
 bin/EasyBC: CMakeFiles/EasyBC.dir/src/analysis/sbox/Check.cpp.o
 bin/EasyBC: CMakeFiles/EasyBC.dir/src/analysis/sbox/Reduction.cpp.o
 bin/EasyBC: CMakeFiles/EasyBC.dir/src/analysis/sbox/SboxModel.cpp.o
 bin/EasyBC: CMakeFiles/EasyBC.dir/src/analysis/sbox/superball.cpp.o
 bin/EasyBC: CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.o
-bin/EasyBC: CMakeFiles/EasyBC.dir/src/core/ASTNode.cpp.o
-bin/EasyBC: CMakeFiles/EasyBC.dir/src/core/ProcedureH.cpp.o
-bin/EasyBC: CMakeFiles/EasyBC.dir/src/core/ValueCommon.cpp.o
-bin/EasyBC: CMakeFiles/EasyBC.dir/src/frontend/Transformer.cpp.o
+bin/EasyBC: CMakeFiles/EasyBC.dir/src/analysis/differential/DiffMILPcons.cpp.o
+bin/EasyBC: CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSBMILP.cpp.o
+bin/EasyBC: CMakeFiles/EasyBC.dir/src/analysis/differential/DiffSWMILP.cpp.o
 bin/EasyBC: CMakeFiles/EasyBC.dir/src/interpreter/semanticInter.cpp.o
-bin/EasyBC: CMakeFiles/EasyBC.dir/src/main.cpp.o
-bin/EasyBC: CMakeFiles/EasyBC.dir/src/util/BranchNum.cpp.o
-bin/EasyBC: CMakeFiles/EasyBC.dir/src/util/utilities.cpp.o
 bin/EasyBC: CMakeFiles/EasyBC.dir/generated/parser.cpp.o
 bin/EasyBC: CMakeFiles/EasyBC.dir/generated/lexer.cpp.o
 bin/EasyBC: CMakeFiles/EasyBC.dir/build.make
@@ -380,7 +460,7 @@ bin/EasyBC: /usr/lib/x86_64-linux-gnu/libfl.so
 bin/EasyBC: /usr/lib/gcc/x86_64-linux-gnu/13/libgomp.so
 bin/EasyBC: /usr/lib/x86_64-linux-gnu/libpthread.a
 bin/EasyBC: CMakeFiles/EasyBC.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable bin/EasyBC"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable bin/EasyBC"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/EasyBC.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
