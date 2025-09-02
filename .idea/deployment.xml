@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
+    <option name="confirmBeforeUploading" value="false" />
+    <serverData>
+      <paths name="Local Ubuntu (3c4b28b0-730e-4900-8cf3-d3c29e34e64e)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/sunpu/CPP/EasyBC" local="$PROJECT_DIR$" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-local-ubuntu" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-local-ubuntu" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

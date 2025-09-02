@@ -1,92 +1,83 @@
+# =============================================================================
+# EasyBC v5.1.0 - "The Linker Fix" Build Script
+# =============================================================================
+# @brief      This version correctly finds and links the OpenMP library
+#             to resolve the "undefined reference to `omp_...`" errors.
+# @version    5.1.0
+#
 cmake_minimum_required(VERSION 3.16)
-project(EasyBC)
+project(EasyBC VERSION 5.1.0 LANGUAGES CXX)
 
+# --- 基本设置 ---
 set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
-set(CMAKE_PREFIX_PATH "/usr/bin/flex")
+# =============================================================================
+# 包含目录
+# =============================================================================
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+include_directories(${CMAKE_BINARY_DIR})
+include_directories("/usr/local/include")
+include_directories("/home/sunpu/gurobi/gurobi1203/linux64/include")
 
-INCLUDE_DIRECTORIES(${CMAKE_CURRENT_BINARY_DIR})
-INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR})
-INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include)
-INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include/preprocessing)
-INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include/branchNum)
-INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include/differentialCrypt)
-INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include/diffSingleKey)
-INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include/sbox)
-INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/include/util)
-INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/data)
-INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/z3/include)
+# =============================================================================
+# 依赖包查找
+# =============================================================================
+find_package(FLEX REQUIRED)
+find_package(BISON REQUIRED)
+find_package(Threads REQUIRED)
+# [最终修正]: 使用CMake官方方式查找OpenMP
+find_package(OpenMP REQUIRED)
 
-INCLUDE_DIRECTORIES(/usr/include/)
-LINK_DIRECTORIES(/usr/lib)
+# =============================================================================
+# Flex/Bison 代码生成
+# =============================================================================
+set(GENERATED_DIR ${CMAKE_BINARY_DIR}/generated)
+file(MAKE_DIRECTORY ${GENERATED_DIR})
+set(PARSER_HEADER ${GENERATED_DIR}/parser.h)
+set(PARSER_SOURCE ${GENERATED_DIR}/parser.cpp)
+set(LEXER_SOURCE ${GENERATED_DIR}/lexer.cpp)
 
-INCLUDE_DIRECTORIES(YourGurobiPath)
-LINK_DIRECTORIES(YourGurobiPath)
+BISON_TARGET(EasyBCParser src/frontend/language/parser.y ${PARSER_SOURCE} DEFINES_FILE ${PARSER_HEADER})
+FLEX_TARGET(EasyBCLexer src/frontend/language/lexer.l ${LEXER_SOURCE})
+ADD_FLEX_BISON_DEPENDENCY(EasyBCLexer EasyBCParser)
 
-set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -fopenmp")
-set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g2 -gdwarf-2")
+# =============================================================================
+# 自动搜集所有源文件
+# =============================================================================
+file(GLOB_RECURSE EASYBC_SOURCES "src/*.cpp")
 
-FIND_PACKAGE(FLEX REQUIRED)
-FIND_PACKAGE(BISON REQUIRED)
-message( ${CMAKE_CURRENT_SOURCE_DIR} )
-BISON_TARGET(parser lib/language/parser.y ${CMAKE_CURRENT_BINARY_DIR}/parser.cpp
-        DEFINES_FILE ${CMAKE_CURRENT_BINARY_DIR}/parser.h
-        )
-FLEX_TARGET(lexer lib/language/lexer.l ${CMAKE_CURRENT_BINARY_DIR}/lexer.cpp)
+# =============================================================================
+# 定义可执行文件
+# =============================================================================
+add_executable(EasyBC ${EASYBC_SOURCES} ${PARSER_SOURCE} ${LEXER_SOURCE})
 
-ADD_FLEX_BISON_DEPENDENCY(lexer parser)
+# =============================================================================
+# 链接库
+# =============================================================================
+target_link_libraries(EasyBC PRIVATE
+        ${FLEX_LIBRARIES}
+        ${BISON_LIBRARIES}
+        jsoncpp
+        gurobi_g++8.5
+        gurobi120
+        z3
+        Threads::Threads
+        # [最终修正]: 链接到CMake找到的OpenMP C++目标
+        # 这会自动添加所有必需的编译器和链接器标志 (-fopenmp)
+        OpenMP::OpenMP_CXX
+)
 
-ADD_EXECUTABLE(EasyBC
-        ${FLEX_lexer_OUTPUTS}
-        ${BISON_parser_OUTPUTS}
-        main.cpp
-        include/preprocessing/Value.h
-        include/preprocessing/Interpreter.h
-        include/preprocessing/ValueCommon.h
-        include/preprocessing/ThreeAddressNode.h
-        include/preprocessing/ProcedureH.h
-        include/preprocessing/Transformer.h
-        include/branchNum/BranchNum.h
-        include/differential/DiffSBMILP.h
-        include/differential/DiffSWMILP.h
-        include/differential/DiffMILPcons.h
-        include/interpreter/semanticInter.h
-        include/sbox/SboxModel.h
-        include/sbox/SboxExtC.h
-        include/sbox/Check.h
-        include/sbox/Reduction.h
-        include/sbox/superball.h
-        include/sbox/superballMGR.h
-        include/sbox/SyntaxGuided.h
-        include/util/utilities.h
-        lib/preprocessing/ASTNode.cpp
-        lib/preprocessing/ValueCommon.cpp
-        lib/preprocessing/ProcedureH.cpp
-        lib/preprocessing/Transformer.cpp
-        lib/branchNum/BranchNum.cpp
-        lib/interpreter/semanticInter.cpp
-        lib/sbox/SboxModel.cpp
-        lib/sbox/Check.cpp
-        lib/sbox/Reduction.cpp
-        lib/sbox/superball.cpp
-        lib/sbox/superballMGR.cpp
-        lib/util/utilities.cpp
-        lib/differential/DiffSBMILP.cpp
-        lib/differential/DiffSWMILP.cpp
-        lib/differential/DiffMILPcons.cpp )
+target_link_directories(EasyBC PRIVATE
+        "/usr/local/lib"
+        "/home/sunpu/gurobi/gurobi1203/linux64/lib"
+)
 
-find_library(gurobi_static NAMES libgurobi_g++5.2.a
-        PATHS YourGurobiLib)
+# [最终修正]: 从这里移除手动的 -fopenmp, 因为 OpenMP::OpenMP_CXX 会自动处理
+target_compile_options(EasyBC PRIVATE
+        -O3 -g2 -gdwarf-2
+)
 
-find_library(gurobi_dynamic NAMES libgurobi100.so
-        PATHS YourGurobiLib)
-
-if(NOT gurobi_static)
-    message(FATAL_ERROR "Failed to find Gurobi lib")
-endif()
-message(${gurobi_static})
-message(${gurobi_dynamic})
-
-TARGET_LINK_LIBRARIES(EasyBC ${FLEX_LIBRARIES} jsoncpp)
-TARGET_LINK_LIBRARIES(EasyBC ${gurobi_static} ${gurobi_dynamic} ${PROJECT_SOURCE_DIR}/z3/bin/libz3.so)
-
+message(STATUS "Build system finalized. OpenMP linked. Ready for final executable.")
