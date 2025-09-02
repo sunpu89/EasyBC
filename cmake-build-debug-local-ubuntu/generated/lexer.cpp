@@ -548,8 +548,8 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
-#line 2 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 1 "src/frontend/language/lexer.l"
+#line 2 "src/frontend/language/lexer.l"
 #include <stdio.h>
 #include <string>
 #include "easybc/core/ASTNode.h"
@@ -775,7 +775,7 @@ YY_DECL
 		}
 
 	{
-#line 17 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 17 "src/frontend/language/lexer.l"
 
 #line 781 "/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/generated/lexer.cpp"
 
@@ -846,286 +846,286 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 18 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 18 "src/frontend/language/lexer.l"
 { /* # as comments */ }
 	YY_BREAK
 case 2:
 /* rule 2 can match eol */
 YY_RULE_SETUP
-#line 19 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 19 "src/frontend/language/lexer.l"
 ; //ignores spaces
 	YY_BREAK
 /* operation */
 case 3:
 YY_RULE_SETUP
-#line 22 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 22 "src/frontend/language/lexer.l"
 { return TPLUS;}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 23 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 23 "src/frontend/language/lexer.l"
 { return TMINUS;}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 24 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 24 "src/frontend/language/lexer.l"
 { return TFFTIMES;}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 25 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 25 "src/frontend/language/lexer.l"
 { return TDIVIDE;}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 26 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 26 "src/frontend/language/lexer.l"
 { return TMOD;  }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 27 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 27 "src/frontend/language/lexer.l"
 { return TAND; }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 28 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 28 "src/frontend/language/lexer.l"
 { return TOR; }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 29 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 29 "src/frontend/language/lexer.l"
 { return TXOR; }
 	YY_BREAK
 /* base type */
 case 11:
 YY_RULE_SETUP
-#line 32 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 32 "src/frontend/language/lexer.l"
 { SAVE_TOKEN; return TYUINT; }
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 33 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 33 "src/frontend/language/lexer.l"
 { SAVE_TOKEN; return TYUINT1; }
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 34 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 34 "src/frontend/language/lexer.l"
 { SAVE_TOKEN; return TYUINT4; }
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 35 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 35 "src/frontend/language/lexer.l"
 { SAVE_TOKEN; return TYUINT6; }
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 36 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 36 "src/frontend/language/lexer.l"
 { SAVE_TOKEN; return TYUINT8; }
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 37 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 37 "src/frontend/language/lexer.l"
 { SAVE_TOKEN; return TYUINT12; }
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 38 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 38 "src/frontend/language/lexer.l"
 { SAVE_TOKEN; return TYUINT16; }
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 39 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 39 "src/frontend/language/lexer.l"
 { SAVE_TOKEN; return TYUINT32; }
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 40 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 40 "src/frontend/language/lexer.l"
 { SAVE_TOKEN; return TYUINT64; }
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 41 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 41 "src/frontend/language/lexer.l"
 { SAVE_TOKEN; return TYUINT128; }
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 42 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 42 "src/frontend/language/lexer.l"
 { SAVE_TOKEN; return TYUINT256; }
 	YY_BREAK
 /* expression and statement token */
 case 22:
 YY_RULE_SETUP
-#line 45 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 45 "src/frontend/language/lexer.l"
 { return TLPAREN;} /* expression */
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 46 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 46 "src/frontend/language/lexer.l"
 { return TRPAREN;}
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 47 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 47 "src/frontend/language/lexer.l"
 { return TNOT;}
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 48 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 48 "src/frontend/language/lexer.l"
 { return TLABRACKET; }
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 49 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 49 "src/frontend/language/lexer.l"
 { return TRABRACKET; }
 	YY_BREAK
 case 27:
 YY_RULE_SETUP
-#line 50 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 50 "src/frontend/language/lexer.l"
 { return TVIEW; }
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
-#line 51 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 51 "src/frontend/language/lexer.l"
 { return TTOUINT; }
 	YY_BREAK
 case 29:
 YY_RULE_SETUP
-#line 52 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 52 "src/frontend/language/lexer.l"
 { return TRSHIFTL; }
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
-#line 53 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 53 "src/frontend/language/lexer.l"
 { return TRSHIFTR; }
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
-#line 54 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 54 "src/frontend/language/lexer.l"
 { return TSHIFTL; }
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
-#line 55 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 55 "src/frontend/language/lexer.l"
 { return TSHIFTR; }
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
-#line 56 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 56 "src/frontend/language/lexer.l"
 { return TLBRACKET; }
 	YY_BREAK
 case 34:
 YY_RULE_SETUP
-#line 57 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 57 "src/frontend/language/lexer.l"
 { return TRBRACKET; }
 	YY_BREAK
 case 35:
 YY_RULE_SETUP
-#line 58 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 58 "src/frontend/language/lexer.l"
 { return TCOMMA;}
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
-#line 59 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 59 "src/frontend/language/lexer.l"
 { return TSEMICOLON; } /* statement */
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
-#line 60 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 60 "src/frontend/language/lexer.l"
 { return TASSIGN;}
 	YY_BREAK
 case 38:
 YY_RULE_SETUP
-#line 61 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 61 "src/frontend/language/lexer.l"
 { return TFOR; }
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
-#line 62 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 62 "src/frontend/language/lexer.l"
 { return TFROM; }
 	YY_BREAK
 case 40:
 YY_RULE_SETUP
-#line 63 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 63 "src/frontend/language/lexer.l"
 { return TTO; }
 	YY_BREAK
 case 41:
 YY_RULE_SETUP
-#line 64 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 64 "src/frontend/language/lexer.l"
 { return TRETURN; }
 	YY_BREAK
 case 42:
 YY_RULE_SETUP
-#line 65 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 65 "src/frontend/language/lexer.l"
 { return TLBRACE; }
 	YY_BREAK
 case 43:
 YY_RULE_SETUP
-#line 66 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 66 "src/frontend/language/lexer.l"
 { return TRBRACE; }
 	YY_BREAK
 case 44:
 YY_RULE_SETUP
-#line 68 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 68 "src/frontend/language/lexer.l"
 { return TRFN; }
 	YY_BREAK
 case 45:
 YY_RULE_SETUP
-#line 69 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 69 "src/frontend/language/lexer.l"
 { return TKEYSCHD; }
 	YY_BREAK
 case 46:
 YY_RULE_SETUP
-#line 70 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 70 "src/frontend/language/lexer.l"
 { return TSFN; }
 	YY_BREAK
 case 47:
 YY_RULE_SETUP
-#line 71 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 71 "src/frontend/language/lexer.l"
 { return TFN; } /* main function */
 	YY_BREAK
 case 48:
 YY_RULE_SETUP
-#line 72 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 72 "src/frontend/language/lexer.l"
 { return TSBOX; }
 	YY_BREAK
 case 49:
 YY_RULE_SETUP
-#line 73 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 73 "src/frontend/language/lexer.l"
 { return TPBOX; }
 	YY_BREAK
 case 50:
 YY_RULE_SETUP
-#line 74 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 74 "src/frontend/language/lexer.l"
 { return TPBOXM; }
 	YY_BREAK
 case 51:
 YY_RULE_SETUP
-#line 75 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 75 "src/frontend/language/lexer.l"
 { return TFFM; }
 	YY_BREAK
 case 52:
 YY_RULE_SETUP
-#line 76 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 76 "src/frontend/language/lexer.l"
 { SAVE_TOKEN; return TCIPHER; }
 	YY_BREAK
 case 53:
 YY_RULE_SETUP
-#line 78 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 78 "src/frontend/language/lexer.l"
 { SAVE_TOKEN; return TINTEGER;}
 	YY_BREAK
 case 54:
 YY_RULE_SETUP
-#line 79 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 79 "src/frontend/language/lexer.l"
 { SAVE_TOKEN; return TIDENTIFIER;}
 	YY_BREAK
 case 55:
 YY_RULE_SETUP
-#line 80 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 80 "src/frontend/language/lexer.l"
 { printf("Unknown token! %s\n", yytext);} /*complains about every unknown character*/
 	YY_BREAK
 case 56:
 YY_RULE_SETUP
-#line 82 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 82 "src/frontend/language/lexer.l"
 YY_FATAL_ERROR( "flex scanner jammed" );
 	YY_BREAK
 #line 1132 "/home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/generated/lexer.cpp"
@@ -2145,7 +2145,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 82 "/home/sunpu/CPP/EasyBC/src/frontend/language/lexer.l"
+#line 82 "src/frontend/language/lexer.l"
 
 void yyerror(const char* s, ...) {
 

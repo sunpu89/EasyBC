@@ -5,6 +5,14 @@
 -- Check for working CXX compiler: /usr/bin/c++ - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
+CMake Deprecation Warning at cmake-build-debug-local-ubuntu/_deps/cli11-src/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+
 -- Found FLEX: /usr/bin/flex (found version "2.6.4") 
 -- Found BISON: /usr/bin/bison (found version "3.8.2") 
 -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
@@ -12,7 +20,7 @@
 -- Found Threads: TRUE  
 -- Found OpenMP_CXX: -fopenmp (found version "4.5") 
 -- Found OpenMP: TRUE (found version "4.5")  
--- Build system finalized. OpenMP linked. Ready for final executable.
--- Configuring done (0.4s)
+-- Project build finalized. Absolute path to source injected.
+-- Configuring done (0.7s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu

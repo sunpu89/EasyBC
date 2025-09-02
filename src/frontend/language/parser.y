@@ -9,7 +9,9 @@
 	extern int yylineno;
 	extern void yyerror(const char* s, ...);
 	using namespace ASTNode;
-        ASTNode::NBlock *programRoot; /* the root node of our program AST:: */
+	extern "C" {
+        ASTNode::NBlock *programRoot;   /* the root node of our program AST:: */
+    }
 %}
 
 %union {

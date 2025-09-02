@@ -65,6 +65,26 @@ CMAKE_BINARY_DIR = /home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
+	/usr/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
+	/usr/bin/cpack --config ./CPackSourceConfig.cmake /home/sunpu/CPP/EasyBC/cmake-build-debug-local-ubuntu/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+.PHONY : package_source/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
@@ -128,6 +148,19 @@ EasyBC: cmake_check_build_system
 EasyBC/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/build
 .PHONY : EasyBC/fast
+
+#=============================================================================
+# Target rules for targets named CLI11
+
+# Build rule for target.
+CLI11: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CLI11
+.PHONY : CLI11
+
+# fast build rule for target.
+CLI11/fast:
+	$(MAKE) $(MAKESILENT) -f _deps/cli11-build/src/CMakeFiles/CLI11.dir/build.make _deps/cli11-build/src/CMakeFiles/CLI11.dir/build
+.PHONY : CLI11/fast
 
 generated/lexer.o: generated/lexer.cpp.o
 .PHONY : generated/lexer.o
@@ -369,6 +402,30 @@ src/analysis/sbox/superballMGR.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/analysis/sbox/superballMGR.cpp.s
 .PHONY : src/analysis/sbox/superballMGR.cpp.s
 
+src/app/Application.o: src/app/Application.cpp.o
+.PHONY : src/app/Application.o
+
+# target to build an object file
+src/app/Application.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/app/Application.cpp.o
+.PHONY : src/app/Application.cpp.o
+
+src/app/Application.i: src/app/Application.cpp.i
+.PHONY : src/app/Application.i
+
+# target to preprocess a source file
+src/app/Application.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/app/Application.cpp.i
+.PHONY : src/app/Application.cpp.i
+
+src/app/Application.s: src/app/Application.cpp.s
+.PHONY : src/app/Application.s
+
+# target to generate assembly for a file
+src/app/Application.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/app/Application.cpp.s
+.PHONY : src/app/Application.cpp.s
+
 src/core/ASTNode.o: src/core/ASTNode.cpp.o
 .PHONY : src/core/ASTNode.o
 
@@ -392,6 +449,30 @@ src/core/ASTNode.s: src/core/ASTNode.cpp.s
 src/core/ASTNode.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/core/ASTNode.cpp.s
 .PHONY : src/core/ASTNode.cpp.s
+
+src/core/Globals.o: src/core/Globals.cpp.o
+.PHONY : src/core/Globals.o
+
+# target to build an object file
+src/core/Globals.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/core/Globals.cpp.o
+.PHONY : src/core/Globals.cpp.o
+
+src/core/Globals.i: src/core/Globals.cpp.i
+.PHONY : src/core/Globals.i
+
+# target to preprocess a source file
+src/core/Globals.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/core/Globals.cpp.i
+.PHONY : src/core/Globals.cpp.i
+
+src/core/Globals.s: src/core/Globals.cpp.s
+.PHONY : src/core/Globals.s
+
+# target to generate assembly for a file
+src/core/Globals.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/core/Globals.cpp.s
+.PHONY : src/core/Globals.cpp.s
 
 src/core/ProcedureH.o: src/core/ProcedureH.cpp.o
 .PHONY : src/core/ProcedureH.o
@@ -465,6 +546,78 @@ src/frontend/Transformer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/frontend/Transformer.cpp.s
 .PHONY : src/frontend/Transformer.cpp.s
 
+src/handlers/AnalysisHandler.o: src/handlers/AnalysisHandler.cpp.o
+.PHONY : src/handlers/AnalysisHandler.o
+
+# target to build an object file
+src/handlers/AnalysisHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/handlers/AnalysisHandler.cpp.o
+.PHONY : src/handlers/AnalysisHandler.cpp.o
+
+src/handlers/AnalysisHandler.i: src/handlers/AnalysisHandler.cpp.i
+.PHONY : src/handlers/AnalysisHandler.i
+
+# target to preprocess a source file
+src/handlers/AnalysisHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/handlers/AnalysisHandler.cpp.i
+.PHONY : src/handlers/AnalysisHandler.cpp.i
+
+src/handlers/AnalysisHandler.s: src/handlers/AnalysisHandler.cpp.s
+.PHONY : src/handlers/AnalysisHandler.s
+
+# target to generate assembly for a file
+src/handlers/AnalysisHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/handlers/AnalysisHandler.cpp.s
+.PHONY : src/handlers/AnalysisHandler.cpp.s
+
+src/handlers/InterpreterHandler.o: src/handlers/InterpreterHandler.cpp.o
+.PHONY : src/handlers/InterpreterHandler.o
+
+# target to build an object file
+src/handlers/InterpreterHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/handlers/InterpreterHandler.cpp.o
+.PHONY : src/handlers/InterpreterHandler.cpp.o
+
+src/handlers/InterpreterHandler.i: src/handlers/InterpreterHandler.cpp.i
+.PHONY : src/handlers/InterpreterHandler.i
+
+# target to preprocess a source file
+src/handlers/InterpreterHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/handlers/InterpreterHandler.cpp.i
+.PHONY : src/handlers/InterpreterHandler.cpp.i
+
+src/handlers/InterpreterHandler.s: src/handlers/InterpreterHandler.cpp.s
+.PHONY : src/handlers/InterpreterHandler.s
+
+# target to generate assembly for a file
+src/handlers/InterpreterHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/handlers/InterpreterHandler.cpp.s
+.PHONY : src/handlers/InterpreterHandler.cpp.s
+
+src/handlers/SboxHandler.o: src/handlers/SboxHandler.cpp.o
+.PHONY : src/handlers/SboxHandler.o
+
+# target to build an object file
+src/handlers/SboxHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/handlers/SboxHandler.cpp.o
+.PHONY : src/handlers/SboxHandler.cpp.o
+
+src/handlers/SboxHandler.i: src/handlers/SboxHandler.cpp.i
+.PHONY : src/handlers/SboxHandler.i
+
+# target to preprocess a source file
+src/handlers/SboxHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/handlers/SboxHandler.cpp.i
+.PHONY : src/handlers/SboxHandler.cpp.i
+
+src/handlers/SboxHandler.s: src/handlers/SboxHandler.cpp.s
+.PHONY : src/handlers/SboxHandler.s
+
+# target to generate assembly for a file
+src/handlers/SboxHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/handlers/SboxHandler.cpp.s
+.PHONY : src/handlers/SboxHandler.cpp.s
+
 src/interpreter/semanticInter.o: src/interpreter/semanticInter.cpp.o
 .PHONY : src/interpreter/semanticInter.o
 
@@ -512,102 +665,6 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
-
-src/preprocessing/ASTNode.o: src/preprocessing/ASTNode.cpp.o
-.PHONY : src/preprocessing/ASTNode.o
-
-# target to build an object file
-src/preprocessing/ASTNode.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/preprocessing/ASTNode.cpp.o
-.PHONY : src/preprocessing/ASTNode.cpp.o
-
-src/preprocessing/ASTNode.i: src/preprocessing/ASTNode.cpp.i
-.PHONY : src/preprocessing/ASTNode.i
-
-# target to preprocess a source file
-src/preprocessing/ASTNode.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/preprocessing/ASTNode.cpp.i
-.PHONY : src/preprocessing/ASTNode.cpp.i
-
-src/preprocessing/ASTNode.s: src/preprocessing/ASTNode.cpp.s
-.PHONY : src/preprocessing/ASTNode.s
-
-# target to generate assembly for a file
-src/preprocessing/ASTNode.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/preprocessing/ASTNode.cpp.s
-.PHONY : src/preprocessing/ASTNode.cpp.s
-
-src/preprocessing/ProcedureH.o: src/preprocessing/ProcedureH.cpp.o
-.PHONY : src/preprocessing/ProcedureH.o
-
-# target to build an object file
-src/preprocessing/ProcedureH.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/preprocessing/ProcedureH.cpp.o
-.PHONY : src/preprocessing/ProcedureH.cpp.o
-
-src/preprocessing/ProcedureH.i: src/preprocessing/ProcedureH.cpp.i
-.PHONY : src/preprocessing/ProcedureH.i
-
-# target to preprocess a source file
-src/preprocessing/ProcedureH.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/preprocessing/ProcedureH.cpp.i
-.PHONY : src/preprocessing/ProcedureH.cpp.i
-
-src/preprocessing/ProcedureH.s: src/preprocessing/ProcedureH.cpp.s
-.PHONY : src/preprocessing/ProcedureH.s
-
-# target to generate assembly for a file
-src/preprocessing/ProcedureH.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/preprocessing/ProcedureH.cpp.s
-.PHONY : src/preprocessing/ProcedureH.cpp.s
-
-src/preprocessing/Transformer.o: src/preprocessing/Transformer.cpp.o
-.PHONY : src/preprocessing/Transformer.o
-
-# target to build an object file
-src/preprocessing/Transformer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/preprocessing/Transformer.cpp.o
-.PHONY : src/preprocessing/Transformer.cpp.o
-
-src/preprocessing/Transformer.i: src/preprocessing/Transformer.cpp.i
-.PHONY : src/preprocessing/Transformer.i
-
-# target to preprocess a source file
-src/preprocessing/Transformer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/preprocessing/Transformer.cpp.i
-.PHONY : src/preprocessing/Transformer.cpp.i
-
-src/preprocessing/Transformer.s: src/preprocessing/Transformer.cpp.s
-.PHONY : src/preprocessing/Transformer.s
-
-# target to generate assembly for a file
-src/preprocessing/Transformer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/preprocessing/Transformer.cpp.s
-.PHONY : src/preprocessing/Transformer.cpp.s
-
-src/preprocessing/ValueCommon.o: src/preprocessing/ValueCommon.cpp.o
-.PHONY : src/preprocessing/ValueCommon.o
-
-# target to build an object file
-src/preprocessing/ValueCommon.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/preprocessing/ValueCommon.cpp.o
-.PHONY : src/preprocessing/ValueCommon.cpp.o
-
-src/preprocessing/ValueCommon.i: src/preprocessing/ValueCommon.cpp.i
-.PHONY : src/preprocessing/ValueCommon.i
-
-# target to preprocess a source file
-src/preprocessing/ValueCommon.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/preprocessing/ValueCommon.cpp.i
-.PHONY : src/preprocessing/ValueCommon.cpp.i
-
-src/preprocessing/ValueCommon.s: src/preprocessing/ValueCommon.cpp.s
-.PHONY : src/preprocessing/ValueCommon.s
-
-# target to generate assembly for a file
-src/preprocessing/ValueCommon.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/EasyBC.dir/build.make CMakeFiles/EasyBC.dir/src/preprocessing/ValueCommon.cpp.s
-.PHONY : src/preprocessing/ValueCommon.cpp.s
 
 src/util/BranchNum.o: src/util/BranchNum.cpp.o
 .PHONY : src/util/BranchNum.o
@@ -664,7 +721,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... package"
+	@echo "... package_source"
 	@echo "... rebuild_cache"
+	@echo "... CLI11"
 	@echo "... EasyBC"
 	@echo "... generated/lexer.o"
 	@echo "... generated/lexer.i"
@@ -696,9 +756,15 @@ help:
 	@echo "... src/analysis/sbox/superballMGR.o"
 	@echo "... src/analysis/sbox/superballMGR.i"
 	@echo "... src/analysis/sbox/superballMGR.s"
+	@echo "... src/app/Application.o"
+	@echo "... src/app/Application.i"
+	@echo "... src/app/Application.s"
 	@echo "... src/core/ASTNode.o"
 	@echo "... src/core/ASTNode.i"
 	@echo "... src/core/ASTNode.s"
+	@echo "... src/core/Globals.o"
+	@echo "... src/core/Globals.i"
+	@echo "... src/core/Globals.s"
 	@echo "... src/core/ProcedureH.o"
 	@echo "... src/core/ProcedureH.i"
 	@echo "... src/core/ProcedureH.s"
@@ -708,24 +774,21 @@ help:
 	@echo "... src/frontend/Transformer.o"
 	@echo "... src/frontend/Transformer.i"
 	@echo "... src/frontend/Transformer.s"
+	@echo "... src/handlers/AnalysisHandler.o"
+	@echo "... src/handlers/AnalysisHandler.i"
+	@echo "... src/handlers/AnalysisHandler.s"
+	@echo "... src/handlers/InterpreterHandler.o"
+	@echo "... src/handlers/InterpreterHandler.i"
+	@echo "... src/handlers/InterpreterHandler.s"
+	@echo "... src/handlers/SboxHandler.o"
+	@echo "... src/handlers/SboxHandler.i"
+	@echo "... src/handlers/SboxHandler.s"
 	@echo "... src/interpreter/semanticInter.o"
 	@echo "... src/interpreter/semanticInter.i"
 	@echo "... src/interpreter/semanticInter.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/preprocessing/ASTNode.o"
-	@echo "... src/preprocessing/ASTNode.i"
-	@echo "... src/preprocessing/ASTNode.s"
-	@echo "... src/preprocessing/ProcedureH.o"
-	@echo "... src/preprocessing/ProcedureH.i"
-	@echo "... src/preprocessing/ProcedureH.s"
-	@echo "... src/preprocessing/Transformer.o"
-	@echo "... src/preprocessing/Transformer.i"
-	@echo "... src/preprocessing/Transformer.s"
-	@echo "... src/preprocessing/ValueCommon.o"
-	@echo "... src/preprocessing/ValueCommon.i"
-	@echo "... src/preprocessing/ValueCommon.s"
 	@echo "... src/util/BranchNum.o"
 	@echo "... src/util/BranchNum.i"
 	@echo "... src/util/BranchNum.s"
